@@ -1,0 +1,18 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/api/test1",
+    "bodyPatterns": [
+      {
+        "matchesJsonPath": "$..[?(@.firstName=='paul')]"
+      }
+    ]
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "pauldata.json",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}
